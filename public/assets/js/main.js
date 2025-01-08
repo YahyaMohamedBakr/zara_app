@@ -502,7 +502,7 @@
                 // Set up an event listener for the contact form.
                 $(form).submit(function (event) {
                     // Stop the browser from submitting the form.
-                    event.preventDefault();
+                    // event.preventDefault();
 
                     // Serialize the form data.
                     var formData = $(form).serialize();
@@ -557,7 +557,7 @@
                 // Set up an event listener for the contact form.
                 $(form).submit(function (event) {
                     // Stop the browser from submitting the form.
-                    event.preventDefault();
+                    // event.preventDefault();
 
                     // Serialize the form data.
                     var formData = $(form).serialize();
@@ -641,14 +641,14 @@ document.querySelector('.main-fab').addEventListener('click', function() {
     buttons.style.opacity = buttons.style.opacity === '1' ? '0' : '1';
 });
 
-const input = document.querySelector("#phone");
-const iti = window.intlTelInput(input, {
-    initialCountry: "sa", // يمكنك ضبط البلد الافتراضي هنا
-    geoIpLookup: function(success, failure) {
-        fetch("https://ipinfo.io/json", { cache: "reload" })
-            .then(response => response.json())
-            .then(data => success(data.country))
-            .catch(failure);
-    },
-    separateDialCode: true, // يظهر رمز الدولة بشكل منفصل
-});
+// const input = document.querySelector("#phone");
+// const iti = window.intlTelInput(input, {
+//     initialCountry: "sa", 
+//     geoIpLookup: function(success, failure) {
+//         fetch("https://ipinfo.io/json", { cache: "reload" })
+//             .then(response => response.json())
+//             .then(data => success(data.country))
+//             .catch(failure);
+//     },
+//     separateDialCode: true, 
+// });

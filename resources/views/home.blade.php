@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -613,26 +613,29 @@
                         <div class="row mt-50-reverse">
                             <div class="col-lg-6">
                                 <div class="tm-contact-formwrapper mt-50">
-                                    <h3>أرسلي لنا رسالة مباشرة</h3>
-                                    <form id="tm-contactform" action="assets/php/mailer.php"
-                                        class="tm-contact-forminner tm-form" method="POST">
+                                    <h3>   احجزي موعدك الآن</h3>
+                                    <form id="tm-contactform" method="POST" action="{{route('booking.store')}}" class="tm-contact-forminner tm-form" >
+                                        @csrf
                                         <div class="tm-form-inner">
                                             <div class="tm-form-field tm-form-fieldhalf">
                                                 <input type="text" placeholder="الاسم (حقل مطلوب)" name="name" required>
                                             </div>
-                                            <div class="tm-form-field tm-form-fieldhalf">
+                                            {{-- <div class="tm-form-field tm-form-fieldhalf">
                                                 <input type="email" placeholder="البريد الإلكتروني (حقل مطلوب)" name="email"
                                                     required>
-                                            </div>
+                                            </div> --}}
                                             <div class="tm-form-field tm-form-fieldhalf">
-                                                <input id ="phone" type="text" placeholder="الهاتف (حقل مطلوب)" name="phone" class="phone-input"
+                                                <input id ="phone" type="tel" placeholder="الهاتف (حقل مطلوب)" name="phone" class="phone-input"
                                                     required>
                                             </div>
                                             <div class="tm-form-field tm-form-fieldhalf">
-                                                <input type="text" placeholder="عنوان الرسالة" name="subject">
+                                                <select type="text"  name="service">
+                                                    <option value="جلسة تقشير الحلد"> الخدمة المطلوبة</option>
+                                                    <option value="جلسة تقشير الحلد">جلسة تقشير الحلد</option>
+                                                </select>
                                             </div>
                                             <div class="tm-form-field">
-                                                <textarea cols="30" rows="5" placeholder="رسالتك"
+                                                <textarea cols="30" rows="5" placeholder=" ملاحظاتك"
                                                     name="message"></textarea>
                                             </div>
                                             <div class="tm-form-field">
@@ -641,7 +644,9 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <p class="form-messages"></p>
+                                    <div id="response-message" style="display:none; color: green;"></div>
+
+                                    {{-- <p class="form-messages"></p> --}}
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -857,6 +862,50 @@
     <script src="assets/js/vendors/scrollspy.min.js"></script>
     <script src="assets/js/vendors/ScrollMagic.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+<script>
+$(document).ready(function () {
+    $('#tm-contactform').on('submit', function (e) {
+        e.preventDefault(); // منع إعادة تحميل الصفحة
+
+        var formData = $(this).serialize(); // تحويل بيانات النموذج
+
+        $.ajax({
+            url: "{{ route('booking.store') }}", // المسار المحدد في Laravel
+            type: "POST",
+            data: formData,
+            success: function (response) {
+                // التحقق من وجود الخاصية 'success' في الرد
+                if (response.success) {
+                    // عرض الرسالة النصية فقط
+                    $('#response-message').text(response.message).css('color', 'green').show();
+                    $('#tm-contactform')[0].reset(); // إعادة تعيين النموذج
+                } else {
+                    $('#response-message').text('حدث خطأ ما.').css('color', 'red').show();
+                }
+            },
+            error: function (xhr) {
+                if (xhr.responseJSON && xhr.responseJSON.errors) {
+                    var errors = xhr.responseJSON.errors;
+                    var errorMessage = '';
+
+                    // تجميع الأخطاء من الرد
+                    for (var field in errors) {
+                        errorMessage += errors[field] + '\n';
+                    }
+
+                    // عرض الأخطاء
+                    $('#response-message').text(errorMessage).css('color', 'red').show();
+                } else {
+                    $('#response-message').text('حدث خطأ أثناء إرسال النموذج.').css('color', 'red').show();
+                }
+            }
+        });
+    });
+});
+
+</script>
+
     <!-- endinject -->
 </body>
 
