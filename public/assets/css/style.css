@@ -1536,7 +1536,7 @@ input[type=radio]:checked~label::before {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #272635;
+  background: #343355;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6905,4 +6905,78 @@ body {
 
 span, p,h1,h2,h3,h4,h5,h6 {
 font-family: 'Marhey' !important;
+}
+
+
+/* .floating{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+       font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-button{
+	margin-top:16px;
+  color: #FFF;
+} */
+
+
+
+.floating-action-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.floating-action-buttons .fab {
+  background-color: #8a2561; /* لون الواتساب */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  /* padding: 15px; */
+  font-size: 24px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fab-buttons {
+  position: absolute;
+  bottom: 80px; 
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.fab-buttons .fab {
+  margin-bottom: 10px;
+  background-color: #8a2561;
+}
+
+.main-fab:hover + .fab-buttons,
+.fab-buttons:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fab i {
+  font-size: 20px;
+}
+
+.fab:hover {
+  background-color: #f88fbf; /* تغيير اللون عند التمرير */
 }

@@ -632,3 +632,23 @@
 
 
 })(jQuery);
+
+
+
+document.querySelector('.main-fab').addEventListener('click', function() {
+    var buttons = document.querySelector('.fab-buttons');
+    buttons.style.visibility = buttons.style.visibility === 'visible' ? 'hidden' : 'visible';
+    buttons.style.opacity = buttons.style.opacity === '1' ? '0' : '1';
+});
+
+const input = document.querySelector("#phone");
+const iti = window.intlTelInput(input, {
+    initialCountry: "sa", // يمكنك ضبط البلد الافتراضي هنا
+    geoIpLookup: function(success, failure) {
+        fetch("https://ipinfo.io/json", { cache: "reload" })
+            .then(response => response.json())
+            .then(data => success(data.country))
+            .catch(failure);
+    },
+    separateDialCode: true, // يظهر رمز الدولة بشكل منفصل
+});

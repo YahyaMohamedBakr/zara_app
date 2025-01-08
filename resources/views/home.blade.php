@@ -27,7 +27,15 @@
     <link rel="stylesheet" href="assets/css/vendors/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/vendors/jquery.nstSlider.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+
     <!-- endinject -->
+
+        {{-- tel --}}
+        <link rel="stylesheet" href="/assets/css/intlTelInput.min.css">
+
+        <script src="/assets/js/intlTelInput.min.js"></script>
+        {{-- end tel --}}
 </head>
 
 <body>
@@ -136,9 +144,9 @@
                                     <li><a href="#contact_us">كيف تتواصلين معنا؟</a></li>
                                 </ul>
                             </nav>
-                            <!-- <div class="tm-header-button">
-                                <a href="#appointment-area" class="tm-button hash-scroll-link">Book Appointment</a>
-                            </div> -->
+                            <div class="tm-header-button">
+                                <a href="#appointment-area" class="tm-button hash-scroll-link"> احجزي الآن</a>
+                            </div>
                             <div class="tm-mobilenav"></div>
                         </div>
                     </div>
@@ -160,11 +168,14 @@
                             <div class="col-lg-7 col-md-9">
                                 <div class="tm-heroslider-contentwrapper">
                                     <div class="tm-heroslider-content">
-                                        <h1> كل ما تحتاجينه</h1>
-                                        <p>احجزي موعدك الآن مع أفضل المراكز المتخصصة واستمتعي بجمال دائم وابتسامة مشرقة.
-
+                                        <h1> جمال يليق بك، وعناية تثقين بها</h1>
+                                        <p>
+                                            أنت تستحقين  الأفضل دائمًا! في مركز كيان زارا الطبي، نحن لا نقدم فقط خدمات طبية، بل نرسم طريقك نحو الثقة والجمال. اجعلي لحظتك الآن هي البداية لحياة أكثر إشراقًا وصحة.
                                         </p>
-                                        <a href="#tm-service-area" class="tm-button">تعرفي على المزيد</a>
+                                        {{-- <p>احجزي موعدك الآن مع أفضل المراكز المتخصصة واستمتعي بجمال دائم وابتسامة مشرقة.
+
+                                        </p> --}}
+                                        <a href="#appointment-area" class="tm-button"> احجزي الآن  </a>
                                     </div>
                                 </div>
                             </div>
@@ -614,7 +625,7 @@
                                                     required>
                                             </div>
                                             <div class="tm-form-field tm-form-fieldhalf">
-                                                <input type="text" placeholder="الهاتف (حقل مطلوب)" name="phone"
+                                                <input id ="phone" type="text" placeholder="الهاتف (حقل مطلوب)" name="phone" class="phone-input"
                                                     required>
                                             </div>
                                             <div class="tm-form-field tm-form-fieldhalf">
@@ -789,6 +800,31 @@
                 </div>
             </div>
         </div>
+{{-- whatsapp --}}
+
+
+<div class="floating-action-buttons">
+    <button class="fab main-fab">
+        <i class="fas fa-comment-alt"></i>
+        </button>
+    <div class="fab-buttons">
+        <button class="fab whatsapp-fab">
+            <a href="https://wa.me/966567771647" class="floating"  target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            </a>
+        </button>
+        <button class="fab call-fab">
+            <i class="fas fa-phone-alt"></i>
+        </button>
+        <button class="fab facebook-fab">
+            <i class="fab fa-facebook"></i>
+        </button>
+    </div>
+</div>
+
+        {{-- <a href="https://wa.me/966567771647" class="floating" target="_blank">
+            <i class="fab fa-whatsapp float-button"></i>
+        </a> --}}
         <!--// Footer -->
 
         <!-- Product Quickview -->
