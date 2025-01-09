@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class BookingController extends Controller
 {
@@ -29,6 +30,7 @@ class BookingController extends Controller
 
         Booking::create($validated);
 
+        //Mail::to('y.bakr1010@gmail.com')->send();
         return response()->json([
             'success' => true,
             'message' => 'تم إرسال النموذج بنجاح!'

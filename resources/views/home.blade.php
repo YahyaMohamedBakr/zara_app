@@ -7,6 +7,8 @@
     <title>عيادات كيان زارا الطبي</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link rel="apple-touch-icon" href="assets/images/favicon.png">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -315,10 +317,16 @@
                                 <span class="tm-service-icon">
                                     <i class="flaticon-make-up"></i>
                                 </span>
-                                <h5> خدمات الميكب</h5>
-                                <p>
-                                    خدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكب
-                                </p>
+                                <h5> خدمات الأسنان</h5>
+                                    <p>
+                                        ابتسامتك ليست مجرد تعبير، إنها سر ثقتك بنفسك. في كيان زارا، نقدم خدمات استثنائية تشمل:
+                                        <ul>
+                                          <li>تبييض الأسنان بتقنيات متطورة.</li>
+                                          <li>ابتسامة هوليود بتصميم فردي.</li>
+                                          <li>زراعة الأسنان بأعلى درجات الدقة.</li>
+                                        </ul>
+                                        لا تنتظر، دعنا نحول ابتسامتك إلى تحفة فنية.
+                                      </p>
                                 <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
                             </div>
                         </div>
@@ -327,11 +335,17 @@
                                 <span class="tm-service-icon">
                                     <i class="flaticon-facial-mask"></i>
                                 </span>
-                                <h5>جلسات المساك  </h5>
+                                <h5> الجلدية والتجميل  </h5>
                                 <p>
-                                    جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد  جلسات تقشير وتفتيح الجلد 
-
-                                </p>
+                                    كل بشرة تحكي قصة، ونحن هنا لنكتب قصتك بجمال متجدد. خدماتنا تشمل:
+                                    <ul>
+                                      <li>علاج التصبغات وإزالة البقع الداكنة.</li>
+                                      <li>جلسات النضارة المتقدمة لإشراقة طبيعية.</li>
+                                      <li>حقن الفيلر والبوتوكس لتحديد الملامح.</li>
+                                    </ul>
+                                    ثق بنا لتجربة تمنحك المظهر الذي تحلم به!
+                                  </p>
+                                  
                                 <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
                             </div>
                         </div>
@@ -340,10 +354,17 @@
                                 <span class="tm-service-icon">
                                     <i class="flaticon-skin-care"></i>
                                 </span>
-                                <h5>تقشير وتفتيح البشرة</h5>
+                                <h5>  الليزر</h5>
                                 <p>
-                                    جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد 
-                                </p>
+                                    قولي وداعًا للتجارب غير المرضية! مع كيان زارا، نقدم:
+                                    <ul>
+                                      <li>إزالة الشعر بالليزر بنتائج طويلة الأمد.</li>
+                                      <li>علاج التصبغات وإعادة الحيوية لبشرتك.</li>
+                                      <li>تقنيات تجديد البشرة المتطورة.</li>
+                                    </ul>
+                                    أضف لمسة من السحر لحياتك، وثق بخبرائنا لتجربة آمنة ومتميزة.
+                                  </p>
+                                  
                                 <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
                             </div>
                         </div>
@@ -631,7 +652,15 @@
                                             <div class="tm-form-field tm-form-fieldhalf">
                                                 <select type="text"  name="service">
                                                     <option value="جلسة تقشير الحلد"> الخدمة المطلوبة</option>
-                                                    <option value="جلسة تقشير الحلد">جلسة تقشير الحلد</option>
+                                                    <option value="تقويم الأسنان">تقويم الأسنان</option>
+                                                    <option value="زراعة الأسنان">زراعة الأسنان</option>
+                                                    <option value="هوليوود سمايل">هوليوود سمايل</option>
+                                                    <option value="فيلر و بوتكس">فيلر و بوتكس</option>
+                                                    <option value="إزالة وتشقير الشعر بالليزر">إزالة وتشقير الشعر بالليزر</option>
+                                                    <option value="فراكشنال ليزر">فراكشنال ليزر</option>
+                                                    <option value="هايدروفيشيال">هايدروفيشيال</option>
+                                                    <option value="خلايا جذعية وميزوثيرابي">خلايا جذعية وميزوثيرابي</option>
+                                                    <option value="إزالة تاتو">إزالة تاتو</option>
                                                 </select>
                                             </div>
                                             <div class="tm-form-field">
@@ -865,44 +894,35 @@
 
 <script>
 $(document).ready(function () {
-    $('#tm-contactform').on('submit', function (e) {
-        e.preventDefault(); // منع إعادة تحميل الصفحة
+    $('#tm-contactform').off('submit').on('submit', function (e) {
+        e.preventDefault(); 
 
-        var formData = $(this).serialize(); // تحويل بيانات النموذج
+        var form = this;
+        var formData = new FormData(form);
+
+        formData.append('_token', $('meta[name="csrf-token"]').attr('content'));
 
         $.ajax({
-            url: "{{ route('booking.store') }}", // المسار المحدد في Laravel
+            url: "{{route('booking.store')}}", 
             type: "POST",
             data: formData,
+            contentType: false,
+            processData: false,
             success: function (response) {
-                // التحقق من وجود الخاصية 'success' في الرد
-                if (response.success) {
-                    // عرض الرسالة النصية فقط
-                    $('#response-message').text(response.message).css('color', 'green').show();
-                    $('#tm-contactform')[0].reset(); // إعادة تعيين النموذج
-                } else {
-                    $('#response-message').text('حدث خطأ ما.').css('color', 'red').show();
-                }
+                $('#response-message').text(response.message).css('color', 'green').show();
+                $('#tm-contactform')[0].reset();
             },
             error: function (xhr) {
-                if (xhr.responseJSON && xhr.responseJSON.errors) {
-                    var errors = xhr.responseJSON.errors;
-                    var errorMessage = '';
-
-                    // تجميع الأخطاء من الرد
-                    for (var field in errors) {
-                        errorMessage += errors[field] + '\n';
-                    }
-
-                    // عرض الأخطاء
-                    $('#response-message').text(errorMessage).css('color', 'red').show();
-                } else {
-                    $('#response-message').text('حدث خطأ أثناء إرسال النموذج.').css('color', 'red').show();
+                var errorMessage = 'حدث خطأ أثناء الإرسال.';
+                if (xhr.status === 419) {
+                    errorMessage = 'انتهت الجلسة، يرجى إعادة تحميل الصفحة والمحاولة مجددًا.';
                 }
+                $('#response-message').text(errorMessage).css('color', 'red').show();
             }
         });
     });
 });
+
 
 </script>
 
