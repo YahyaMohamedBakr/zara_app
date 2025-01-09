@@ -97,7 +97,7 @@
                             <button class="tm-header-searchclose"><i class="ti ti-close"></i></button>
                         </div>
                         <div class="tm-header-inner">
-                            <a href="index.html" class="tm-header-logo">
+                            <a href="{{route('home')}}" class="tm-header-logo">
                                 <img src="assets/images/logo.png" alt="munu">
                             </a>
                             <nav class="tm-header-nav">
@@ -315,7 +315,7 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="tm-service text-center tm-scrollanim">
                                 <span class="tm-service-icon">
-                                    <i class="flaticon-make-up"></i>
+                                    <img class="service-icon" src="assets/images/service1.png" alt="service icon">
                                 </span>
                                 <h5> خدمات الأسنان</h5>
                                     <p>
@@ -333,7 +333,7 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="tm-service text-center tm-scrollanim">
                                 <span class="tm-service-icon">
-                                    <i class="flaticon-facial-mask"></i>
+                                    <img class="service-icon" src="assets/images/service2.png" alt="service icon">
                                 </span>
                                 <h5> الجلدية والتجميل  </h5>
                                 <p>
@@ -352,7 +352,7 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="tm-service text-center tm-scrollanim">
                                 <span class="tm-service-icon">
-                                    <i class="flaticon-skin-care"></i>
+                                    <img class="service-icon" src="assets/images/service3.png" alt="service icon">
                                 </span>
                                 <h5>  الليزر</h5>
                                 <p>
@@ -368,7 +368,7 @@
                                 <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12">
+                        {{-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="tm-service text-center tm-scrollanim">
                                 <span class="tm-service-icon">
                                     <i class="flaticon-make-up"></i>
@@ -404,7 +404,7 @@
                                 </p>
                                 <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
                             </div>
-                        </div>
+                        </div> --}}
                         <!-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="tm-service text-center tm-scrollanim">
                                 <span class="tm-service-icon">
@@ -448,23 +448,61 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-12 order-2 order-lg-1">
                             <div class="tm-offer-left tm-scrollanim">
-                                <h1>عروض 2025</h1>
-                                <h3>احصلي على  <span>40%</span> خصم على جلسات التفتيح</h3>
-                                <p>خصم على جلسات التفتيحخصم على جلسات التفتيحخصم على جلسات التفتيحخصم على جلسات التفتيحخصم على جلسات التفتيحخصم على جلسات التفتيح</p>
-                                <a href="#" class="tm-button">احجزي الآن</a>
+                                <h2>استفيدي من عروضنا الحصرية </h2>
+                                <h3>احصلي على  <span>50%</span>خصم  على جلسات الليزر</h3>
+                                <p>
+                                    الفرصة محدودة - احجزي  موعدك الآن وابدأي التغيير اليوم!
+                                  </p>
+                                  <ul>
+                                    <li>باقات شاملة لتجديد البشرة.</li>
+                                    <li>خصومات خاصة على تبييض الأسنان.</li>
+                                  </ul>                                <a href="#" class="tm-button">احجزي الآن</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 order-1 order-lg-2">
                             <div class="tm-offer-right tm-scrollanim">
-                                <img src="assets/images/offer-image.png" alt="offer image">
-                                <div class="tm-countdown" data-countdown="2025/01/12"></div>
+                                <img src="assets/images/service3.png" alt="offer image">
+                                <div class="tm-countdown" data-countdown="2025/01/18"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+             <style>
+             .tm-pricing-compare-area   ul {
+            list-style: none;
+            padding: 0;
+        }
+
+      .tm-pricing-compare-area  ul li {
+            cursor: pointer;
+            /* margin: 5px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; */
+        }
+
+      .tm-pricing-compare-area  ul li:hover {
+            /* background-color: #e0e0e0; */
+        }
+
+      .tm-pricing-compare-area  .price {
+            /* color: white;
+            background-color: #007bff;
+            padding: 5px 10px;
+            border-radius: 5px; */
+            cursor: pointer;
+        }
+
+     .tm-pricing-compare-area   .price:hover {
+            /* background-color: #0056b3; */
+        }
+             </style>
             <!--// Offer Area -->
             <!-- Pricing & Compare Area -->
             <div class="tm-section tm-pricing-compare-area tm-padding-section ">
@@ -475,15 +513,46 @@
                                 <h3>أسعار الخدمات لدينا</h3>
                                 <p>هذه بعض أسعار الخدمات وقد تختلف قليلاً في الباقات والعروض</p>
                                 <ul>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-                                    <li><span class="name">جلسة تقشير الحلد </span> <span class="price">500 رس</span></li>
-
+                                    <li data-service="معالجات وتجميل الأسنان">
+                                        <span class="name">معالجات وتجميل الأسنان</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="تقويم الأسنان">
+                                        <span class="name">تقويم الأسنان</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="زراعة الأسنان">
+                                        <span class="name">زراعة الأسنان</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="هوليوود سمايل">
+                                        <span class="name">هوليوود سمايل</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="فيلر و بوتكس">
+                                        <span class="name">فيلر و بوتكس</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="إزالة وتشقير الشعر بالليزر">
+                                        <span class="name">إزالة وتشقير الشعر بالليزر</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="فراكشنال ليزر">
+                                        <span class="name">فراكشنال ليزر</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="هايدروفيشيال">
+                                        <span class="name">هايدروفيشيال</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="خلايا جذعية وميزوثيرابي">
+                                        <span class="name">خلايا جذعية وميزوثيرابي</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
+                                    <li data-service="إزالة تاتو">
+                                        <span class="name">إزالة تاتو</span>
+                                        <span class="price">اطلبي الخدمة</span>
+                                    </li>
                                 </ul>
                                 <a href="#appointment-area" class="tm-button hash-scroll-link">احجزي الآن</a>
                             </div>
@@ -492,8 +561,8 @@
                             <div class="tm-beforeafter">
                                 <h3>قبل وبعد الجلسات</h3>
                                 <div class="tm-beforeafter-image">
-                                    <img src="assets/images/beforeafter-before.jpg" alt="before image">
-                                    <img src="assets/images/beforeafter-after.jpg" alt="after image">
+                                    <img src="assets/images/2-2.png" alt="before image">
+                                    <img src="assets/images/2-1.png" alt="after image">
                                 </div>
                             </div>
                         </div>
@@ -650,8 +719,9 @@
                                                     required>
                                             </div>
                                             <div class="tm-form-field tm-form-fieldhalf">
-                                                <select type="text"  name="service">
-                                                    <option value="جلسة تقشير الحلد"> الخدمة المطلوبة</option>
+                                                <select type="text"  name="service" id="service-select">
+                                                    <option value="" disabled selected>الخدمة المطلوبة</option>
+                                                    <option value="معالجات وتجميل الأسنان">معالجات وتجميل الأسنان</option>
                                                     <option value="تقويم الأسنان">تقويم الأسنان</option>
                                                     <option value="زراعة الأسنان">زراعة الأسنان</option>
                                                     <option value="هوليوود سمايل">هوليوود سمايل</option>
@@ -688,7 +758,7 @@
                     </div>
                     <div id= "contact_us" class="tm-contact-top tm-scrollanim">
                         <div class="row no-gutters">
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <div class="tm-contact-address">
                                     <h4>Corporate Office</h4>
                                     <div class="tm-contact-addressblock">
@@ -705,22 +775,22 @@
                                         <p><a href="tel:+18009156272">0112006160</a></p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="tm-contact-address">
-                                    <h4>شرفينا بالزيارة</h4>
+                            </div> --}}
+                            <div class="col-lg-12">
+                                <div class="tm-contact-address text-center">
+                                    <h4 class=>شرفينا بالزيارة</h4>
                                     <div class="tm-contact-addressblock">
-                                        <b> العنوان</b>
+                                        {{-- <b> العنوان</b> --}}
                                         <p>الشيخ عبدالعزيز بن عبدالرحمن بن بشير
                                             السعودية, الرياض, الخليج, الشيخ عبدالعزيز بن عبدالرحمن بن بشير</p>
                                     </div>
                                     <div class="tm-contact-addressblock">
-                                        <b>البريد </b>
+                                        {{-- <b>البريد </b> --}}
                                         <p><a href="mailto:kyanzaramedical@gmail.com"> kyanzaramedical@gmail.com</a></p>
                                         <!-- <p>Skype: example.name</p> -->
                                     </div>
                                     <div class="tm-contact-addressblock">
-                                        <b> الهاتف</b>
+                                        {{-- <b> الهاتف</b> --}}
                                         <p><a href="tel:++966112440566">+966112440566</a></p>
                                     </div>
                                 </div>
@@ -848,10 +918,10 @@
             </a>
         </button>
         <button class="fab call-fab">
-            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+966112440566"><i class="fas fa-phone-alt"></i></a>
         </button>
         <button class="fab facebook-fab">
-            <i class="fab fa-facebook"></i>
+            <a href="https://www.facebook.com/kyanzaramedical"><i class="fab fa-facebook"></i></a>
         </button>
     </div>
 </div>
@@ -923,6 +993,18 @@ $(document).ready(function () {
     });
 });
 
+
+
+$(document).ready(function () {
+                $(".price").on("click", function (event) {
+    event.stopPropagation(); 
+    var selectedService = $(this).closest("li").data("service"); // الحصول على البيانات من العنصر الأب <li>
+    $("#service-select").val(selectedService); // تعيين الخدمة في القائمة المنسدلة
+    $('html, body').animate({
+        scrollTop: $("#tm-contactform").offset().top // التمرير إلى الفورم
+    }, 500);
+            });
+        });
 
 </script>
 

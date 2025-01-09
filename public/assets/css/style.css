@@ -6980,3 +6980,9 @@ font-family: 'Marhey' !important;
 .fab:hover {
   background-color: #f88fbf; /* تغيير اللون عند التمرير */
 }
+
+
+
+.service-icon{
+  max-width: 250px;
+}
