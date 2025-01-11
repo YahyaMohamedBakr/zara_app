@@ -147,7 +147,7 @@
                                 </ul>
                             </nav>
                             <div class="tm-header-button">
-                                <a href="#appointment-area" class="tm-button hash-scroll-link"> احجزي الآن</a>
+                                <a href="#our_location" class="tm-button hash-scroll-link"> احجزي الآن</a>
                             </div>
                             <div class="tm-mobilenav"></div>
                         </div>
@@ -177,7 +177,7 @@
                                         {{-- <p>احجزي موعدك الآن مع أفضل المراكز المتخصصة واستمتعي بجمال دائم وابتسامة مشرقة.
 
                                         </p> --}}
-                                        <a href="#appointment-area" class="tm-button"> احجزي الآن  </a>
+                                        <a href="#our_location" class="tm-button"> احجزي الآن  </a>
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +456,7 @@
                                   <ul>
                                     <li>باقات شاملة لتجديد البشرة.</li>
                                     <li>خصومات خاصة على تبييض الأسنان.</li>
-                                  </ul>                                <a href="#" class="tm-button">احجزي الآن</a>
+                                  </ul>                                <a href="#our_location" class="tm-button">احجزي الآن</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 order-1 order-lg-2">
@@ -554,7 +554,7 @@
                                         <span class="price">اطلبي الخدمة</span>
                                     </li>
                                 </ul>
-                                <a href="#appointment-area" class="tm-button hash-scroll-link">احجزي الآن</a>
+                                <a href="#our_location" class="tm-button hash-scroll-link">احجزي الآن</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
