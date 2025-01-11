@@ -110,7 +110,7 @@
                                     </li> -->
                                     <li><a href="#tm-about-area"> لماذا كيان زارا؟</a></li>
                                     <li><a href="#tm-service-area">ماذا نقدم؟</a></li>
-                                    <li><a href="#our_location">أين تجديننا في الممكلة؟</a>
+                                    <li><a href="#our_location">أين تجدنا في الممكلة؟</a>
                                         <!-- <ul>
                                             <li><a href="products.html">Products</a></li>
                                             <li><a href="products-leftsidebar.html">Products Left Sidebar</a></li>
@@ -143,11 +143,11 @@
                                             <li><a href="blog-details-video.html">Blog Details Video</a></li>
                                         </ul> -->
                                     </li>
-                                    <li><a href="#contact_us">كيف تتواصلين معنا؟</a></li>
+                                    <li><a href="#contact_us">كيف تتواصل معنا؟</a></li>
                                 </ul>
                             </nav>
                             <div class="tm-header-button">
-                                <a href="#our_location" class="tm-button hash-scroll-link"> احجزي الآن</a>
+                                <a href="#our_location" class="tm-button hash-scroll-link"> احجز الآن</a>
                             </div>
                             <div class="tm-mobilenav"></div>
                         </div>
@@ -170,14 +170,14 @@
                             <div class="col-lg-7 col-md-9">
                                 <div class="tm-heroslider-contentwrapper">
                                     <div class="tm-heroslider-content">
-                                        <h1> جمال يليق بك، وعناية تثقين بها</h1>
+                                        <h1> جمال يليق بك، وعناية تثق بها</h1>
                                         <p>
-                                            أنت تستحقين  الأفضل دائمًا! في مركز كيان زارا الطبي، نحن لا نقدم فقط خدمات طبية، بل نرسم طريقك نحو الثقة والجمال. اجعلي لحظتك الآن هي البداية لحياة أكثر إشراقًا وصحة.
+                                            أنت تستحق  الأفضل دائمًا! في مركز كيان زارا الطبي، نحن لا نقدم فقط خدمات طبية، بل نرسم طريقك نحو الثقة والجمال. اجعل لحظتك الآن هي البداية لحياة أكثر إشراقًا وصحة.
                                         </p>
-                                        {{-- <p>احجزي موعدك الآن مع أفضل المراكز المتخصصة واستمتعي بجمال دائم وابتسامة مشرقة.
+                                        {{-- <p>احجز موعدك الآن مع أفضل المراكز المتخصصة واستمتعي بجمال دائم وابتسامة مشرقة.
 
                                         </p> --}}
-                                        <a href="#our_location" class="tm-button"> احجزي الآن  </a>
+                                        <a href="#our_location" class="tm-button"> احجز الآن  </a>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +276,7 @@
                                 <p>
                                     نحن لا ندعي أننا الوحيدون في هذا المجال ولكننا نؤمن بأننا يجب أن نقدم لك أفضل خدمة تليق بجمالك وتميزك
                                 </p>
-                                <a href="#tm-service-area" class="tm-button">اعرفي المزيد عن الخدمات </a>
+                                <a href="#tm-service-area" class="tm-button">اعرف المزيد عن الخدمات </a>
                             </div>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                                         </ul>
                                         لا تنتظر، دعنا نحول ابتسامتك إلى تحفة فنية.
                                       </p>
-                                <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
+                                <a href="#" class="tm-readmore tm-readmore-dark">اطلب الخدمة</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
@@ -346,7 +346,7 @@
                                     ثق بنا لتجربة تمنحك المظهر الذي تحلم به!
                                   </p>
                                   
-                                <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
+                                <a href="#" class="tm-readmore tm-readmore-dark">اطلب الخدمة</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
@@ -356,7 +356,7 @@
                                 </span>
                                 <h5>  الليزر</h5>
                                 <p>
-                                    قولي وداعًا للتجارب غير المرضية! مع كيان زارا، نقدم:
+                                    قل وداعًا للتجارب غير المرضية! مع كيان زارا، نقدم:
                                     <ul>
                                       <li>إزالة الشعر بالليزر بنتائج طويلة الأمد.</li>
                                       <li>علاج التصبغات وإعادة الحيوية لبشرتك.</li>
@@ -365,7 +365,7 @@
                                     أضف لمسة من السحر لحياتك، وثق بخبرائنا لتجربة آمنة ومتميزة.
                                   </p>
                                   
-                                <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
+                                <a href="#" class="tm-readmore tm-readmore-dark">اطلب الخدمة</a>
                             </div>
                         </div>
                         {{-- <div class="col-lg-4 col-md-6 col-12">
@@ -377,7 +377,7 @@
                                 <p>
                                     خدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكبخدمات الميكب
                                 </p>
-                                <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
+                                <a href="#" class="tm-readmore tm-readmore-dark">اطلب الخدمة</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
@@ -390,7 +390,7 @@
                                     جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد  جلسات تقشير وتفتيح الجلد 
 
                                 </p>
-                                <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
+                                <a href="#" class="tm-readmore tm-readmore-dark">اطلب الخدمة</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
@@ -402,7 +402,7 @@
                                 <p>
                                     جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد جلسات تقشير وتفتيح الجلد 
                                 </p>
-                                <a href="#" class="tm-readmore tm-readmore-dark">اطلبي الخدمة</a>
+                                <a href="#" class="tm-readmore tm-readmore-dark">اطلب الخدمة</a>
                             </div>
                         </div> --}}
                         <!-- <div class="col-lg-4 col-md-6 col-12">
@@ -448,15 +448,15 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-12 order-2 order-lg-1">
                             <div class="tm-offer-left tm-scrollanim">
-                                <h2>استفيدي من عروضنا الحصرية </h2>
+                                <h2>استفيد من عروضنا الحصرية </h2>
                                 <h3>احصلي على  <span>50%</span>خصم  على جلسات الليزر</h3>
                                 <p>
-                                    الفرصة محدودة - احجزي  موعدك الآن وابدأي التغيير اليوم!
+                                    الفرصة محدودة - احجز  موعدك الآن وابدأي التغيير اليوم!
                                   </p>
                                   <ul>
                                     <li>باقات شاملة لتجديد البشرة.</li>
                                     <li>خصومات خاصة على تبييض الأسنان.</li>
-                                  </ul>                                <a href="#our_location" class="tm-button">احجزي الآن</a>
+                                  </ul>                                <a href="#our_location" class="tm-button">احجز الآن</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-12 order-1 order-lg-2">
@@ -515,46 +515,46 @@
                                 <ul>
                                     <li data-service="معالجات وتجميل الأسنان">
                                         <span class="name">معالجات وتجميل الأسنان</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="تقويم الأسنان">
                                         <span class="name">تقويم الأسنان</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="زراعة الأسنان">
                                         <span class="name">زراعة الأسنان</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="هوليوود سمايل">
                                         <span class="name">هوليوود سمايل</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="فيلر و بوتكس">
                                         <span class="name">فيلر و بوتكس</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="إزالة وتشقير الشعر بالليزر">
                                         <span class="name">إزالة وتشقير الشعر بالليزر</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="فراكشنال ليزر">
                                         <span class="name">فراكشنال ليزر</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="هايدروفيشيال">
                                         <span class="name">هايدروفيشيال</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="خلايا جذعية وميزوثيرابي">
                                         <span class="name">خلايا جذعية وميزوثيرابي</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                     <li data-service="إزالة تاتو">
                                         <span class="name">إزالة تاتو</span>
-                                        <span class="price">اطلبي الخدمة</span>
+                                        <span class="price">اطلب الخدمة</span>
                                     </li>
                                 </ul>
-                                <a href="#our_location" class="tm-button hash-scroll-link">احجزي الآن</a>
+                                <a href="#our_location" class="tm-button hash-scroll-link">احجز الآن</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -691,7 +691,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-8 col-md-9 col-12">
                             <div class="tm-sectiontitle text-center">
-                                <h2>كيف تتواصلين معنا</h2>
+                                <h2>كيف تتواصل معنا</h2>
                                 <span class="tm-sectiontitle-divider">
                                     <img src="assets/images/section-divider-icon.png" alt="section divider">
                                 </span>
@@ -703,7 +703,7 @@
                         <div class="row mt-50-reverse">
                             <div class="col-lg-6">
                                 <div class="tm-contact-formwrapper mt-50">
-                                    <h3>   احجزي موعدك الآن</h3>
+                                    <h3>   احجز موعدك الآن</h3>
                                     <form id="tm-contactform" method="POST" action="{{route('booking.store')}}" class="tm-contact-forminner tm-form" >
                                         @csrf
                                         <div class="tm-form-inner">
@@ -778,7 +778,7 @@
                             </div> --}}
                             <div class="col-lg-12">
                                 <div class="tm-contact-address text-center">
-                                    <h4 class=>شرفينا بالزيارة</h4>
+                                    <h4 class=>شرفنا بالزيارة</h4>
                                     <div class="tm-contact-addressblock">
                                         {{-- <b> العنوان</b> --}}
                                         <p>الشيخ عبدالعزيز بن عبدالرحمن بن بشير
