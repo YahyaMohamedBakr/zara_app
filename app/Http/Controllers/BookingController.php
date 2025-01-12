@@ -28,9 +28,27 @@ class BookingController extends Controller
             'message' => 'nullable',
         ]);
 
-        Booking::create($validated);
+        $booking = Booking::create($validated);
 
-        //Mail::to('y.bakr1010@gmail.com')->send();
+        $emailContent = "تم حجز خدمة جديدة مع التفاصيل التالية:\n\n";
+        $emailContent .= "الاسم: " . $booking->name . "\n";
+        $emailContent .= "رقم الهاتف: " . $booking->phone . "\n";
+        $emailContent .= "الخدمة المطلوبة: " . $booking->service . "\n";
+        $emailContent .= "الرسالة: " . ($booking->message ?? 'لا توجد رسالة') . "\n";
+
+    //   try {
+    Mail::raw($emailContent, function ($message) {
+        $message->to('kyanzaramedical@gmail.com')
+                ->subject('تم استلام حجز جديد');
+   });
+
+// } catch (\Exception $e) {
+//     return response()->json([
+//         'success' => false,
+//         'message' => 'حدث خطأ أثناء إرسال البريد الإلكتروني: ' . $e->getMessage(),
+//     ]);
+// }
+
         return response()->json([
             'success' => true,
             'message' => 'تم إرسال النموذج بنجاح!'
