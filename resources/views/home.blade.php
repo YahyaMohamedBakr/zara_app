@@ -588,8 +588,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
                             <div class="tm-beforeafter">
                                 <h3>قبل وبعد الجلسات</h3>
                                 <div class="tm-beforeafter-image">
-                                    <img src="assets/images/2-2.png" alt="before image">
-                                    <img src="assets/images/2-1.png" alt="after image">
+                                    <img src="assets/images/1-2.jpg" alt="before image">
+                                    <img src="assets/images/1-1.jpg" alt="after image">
                                 </div>
                             </div>
                         </div>
